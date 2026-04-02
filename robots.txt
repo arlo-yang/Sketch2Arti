@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arlo-yang.github.io/Sketch2Arti/sitemap.xml
