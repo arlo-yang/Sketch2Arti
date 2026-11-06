@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot name="predicted_washing_machine_right">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_01.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_02.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_manualv2_1778255758923_J0">
+    <visual>
+      <origin xyz="-0.3490 -0.2646 -0.0795" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_00.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_manualv2_1778255758923_J0" type="revolute">
+    <parent link="base_link"/>
+    <child link="link_manualv2_1778255758923_J0"/>
+    <origin xyz="0.3490 0.2646 0.0795" rpy="0 0 0"/>
+    <axis xyz="-0.0345 0.0027 0.9994"/>
+    <limit lower="0.0" upper="1.5708" effort="1000" velocity="1.0"/>
+  </joint>
+</robot>

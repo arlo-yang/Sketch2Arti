@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="predicted_drawer">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_00.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_manualv2_1778255578578_J0">
+    <visual>
+      <origin xyz="0.1426 -0.2248 -0.6232" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_02.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_manualv2_1778255578578_J0" type="prismatic">
+    <parent link="base_link"/>
+    <child link="link_manualv2_1778255578578_J0"/>
+    <origin xyz="-0.1426 0.2248 0.6232" rpy="0 0 0"/>
+    <axis xyz="0.0000 0.0000 1.0000"/>
+    <limit lower="0.0" upper="1.0000" effort="1000" velocity="1.0"/>
+  </joint>
+  <link name="link_manualv2_1778255578578_J1">
+    <visual>
+      <origin xyz="0.5641 0.2294 -0.6138" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_01.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_manualv2_1778255578578_J1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link_manualv2_1778255578578_J1"/>
+    <origin xyz="-0.5641 -0.2294 0.6138" rpy="0 0 0"/>
+    <axis xyz="-0.0059 -1.0000 0.0000"/>
+    <limit lower="0.0" upper="1.5708" effort="1000" velocity="1.0"/>
+  </joint>
+</robot>

@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<robot name="predicted_car_backward_hinged">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_02.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_07.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_08.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_09.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_10.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_11.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_12.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_user_sketch_1779224070224_J0">
+    <visual>
+      <origin xyz="-0.3199 0.1786 0.1377" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_01.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_user_sketch_1779224070224_J0" type="continuous">
+    <parent link="base_link"/>
+    <child link="link_user_sketch_1779224070224_J0"/>
+    <origin xyz="0.3199 -0.1786 -0.1377" rpy="0 0 0"/>
+    <axis xyz="0.0000 -1.0000 0.0000"/>
+  </joint>
+  <link name="link_user_sketch_1779224070224_J1">
+    <visual>
+      <origin xyz="0.2687 0.1786 0.1377" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_06.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_user_sketch_1779224070224_J1" type="continuous">
+    <parent link="base_link"/>
+    <child link="link_user_sketch_1779224070224_J1"/>
+    <origin xyz="-0.2687 -0.1786 -0.1377" rpy="0 0 0"/>
+    <axis xyz="0.0000 -1.0000 0.0000"/>
+  </joint>
+  <link name="link_user_sketch_1779224070224_J2">
+    <visual>
+      <origin xyz="0.2687 -0.1786 0.1377" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_05.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_user_sketch_1779224070224_J2" type="continuous">
+    <parent link="base_link"/>
+    <child link="link_user_sketch_1779224070224_J2"/>
+    <origin xyz="-0.2687 0.1786 -0.1377" rpy="0 0 0"/>
+    <axis xyz="0.0000 1.0000 0.0000"/>
+  </joint>
+  <link name="link_user_sketch_1779224070224_J3">
+    <visual>
+      <origin xyz="-0.3199 -0.1786 0.1377" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_00.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_user_sketch_1779224070224_J3" type="continuous">
+    <parent link="base_link"/>
+    <child link="link_user_sketch_1779224070224_J3"/>
+    <origin xyz="0.3199 0.1786 -0.1377" rpy="0 0 0"/>
+    <axis xyz="0.0000 1.0000 0.0000"/>
+  </joint>
+  <link name="link_user_sketch_1779224070224_J4">
+    <visual>
+      <origin xyz="0.1181 0.1767 -0.0750" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_04.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_user_sketch_1779224070224_J4" type="revolute">
+    <parent link="base_link"/>
+    <child link="link_user_sketch_1779224070224_J4"/>
+    <origin xyz="-0.1181 -0.1767 0.0750" rpy="0 0 0"/>
+    <axis xyz="0.0195 -0.2261 -0.9739"/>
+    <limit lower="0.0" upper="1.5708" effort="1000" velocity="1.0"/>
+  </joint>
+  <link name="link_user_sketch_1779224070224_J5">
+    <visual>
+      <origin xyz="0.1193 -0.1693 -0.1125" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_03.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_user_sketch_1779224070224_J5" type="revolute">
+    <parent link="base_link"/>
+    <child link="link_user_sketch_1779224070224_J5"/>
+    <origin xyz="-0.1193 0.1693 0.1125" rpy="0 0 0"/>
+    <axis xyz="-0.0173 -0.3043 0.9524"/>
+    <limit lower="0.0" upper="1.5708" effort="1000" velocity="1.0"/>
+  </joint>
+</robot>

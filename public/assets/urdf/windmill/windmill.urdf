@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot name="predicted_windmill">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_01.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_manualv2_1778256973593_J0">
+    <visual>
+      <origin xyz="-0.0850 0.0000 -0.2734" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_00.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_manualv2_1778256973593_J0" type="continuous">
+    <parent link="base_link"/>
+    <child link="link_manualv2_1778256973593_J0"/>
+    <origin xyz="0.0850 0.0000 0.2734" rpy="0 0 0"/>
+    <axis xyz="1.0000 0.0000 0.0000"/>
+  </joint>
+</robot>

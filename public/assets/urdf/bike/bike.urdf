@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<robot name="predicted_bike">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_01.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_02.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_05.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_06.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_07.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_08.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_manualv2_1778255446442_J0">
+    <visual>
+      <origin xyz="0.3244 0.0132 0.1177" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_04.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_manualv2_1778255446442_J0" type="continuous">
+    <parent link="base_link"/>
+    <child link="link_manualv2_1778255446442_J0"/>
+    <origin xyz="-0.3244 -0.0132 -0.1177" rpy="0 0 0"/>
+    <axis xyz="0.0000 -1.0000 0.0000"/>
+  </joint>
+  <link name="link_manualv2_1778255446442_J1">
+    <visual>
+      <origin xyz="-0.3244 0.0066 0.1185" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_00.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_manualv2_1778255446442_J1" type="continuous">
+    <parent link="base_link"/>
+    <child link="link_manualv2_1778255446442_J1"/>
+    <origin xyz="0.3244 -0.0066 -0.1185" rpy="0 0 0"/>
+    <axis xyz="0.0000 -1.0000 0.0000"/>
+  </joint>
+  <link name="link_manualv2_1778255446442_J2">
+    <visual>
+      <origin xyz="0.0748 0.0097 0.1488" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_03.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_manualv2_1778255446442_J2" type="continuous">
+    <parent link="base_link"/>
+    <child link="link_manualv2_1778255446442_J2"/>
+    <origin xyz="-0.0748 -0.0097 -0.1488" rpy="0 0 0"/>
+    <axis xyz="0.0000 -1.0000 0.0000"/>
+  </joint>
+</robot>

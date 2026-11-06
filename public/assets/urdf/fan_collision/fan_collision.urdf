@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot name="predicted_fan_collision">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_01.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_user_sketch_1779216468179_J0">
+    <visual>
+      <origin xyz="0.0373 -0.0004 0.0017" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_00.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_user_sketch_1779216468179_J0" type="continuous">
+    <parent link="base_link"/>
+    <child link="link_user_sketch_1779216468179_J0"/>
+    <origin xyz="-0.0373 0.0004 -0.0017" rpy="0 0 0"/>
+    <axis xyz="1.0000 0.0000 0.0000"/>
+  </joint>
+</robot>

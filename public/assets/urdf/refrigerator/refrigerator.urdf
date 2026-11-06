@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="predicted_refrigerator">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="meshes/part_02.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_manualv2_1777936628187_J0">
+    <visual>
+      <origin xyz="-0.1229 0.0605 0.4437" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_00.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_manualv2_1777936628187_J0" type="revolute">
+    <parent link="base_link"/>
+    <child link="link_manualv2_1777936628187_J0"/>
+    <origin xyz="0.1229 -0.0605 -0.4437" rpy="0 0 0"/>
+    <axis xyz="-0.0257 0.9995 0.0159"/>
+    <limit lower="0.0" upper="1.5708" effort="1000" velocity="1.0"/>
+  </joint>
+  <link name="link_manualv2_1777936628187_J1">
+    <visual>
+      <origin xyz="-0.1233 -0.1898 -0.3381" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/part_01.stl"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_manualv2_1777936628187_J1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link_manualv2_1777936628187_J1"/>
+    <origin xyz="0.1233 0.1898 0.3381" rpy="0 0 0"/>
+    <axis xyz="-0.0134 -0.0081 0.9999"/>
+    <limit lower="0.0" upper="1.5708" effort="1000" velocity="1.0"/>
+  </joint>
+</robot>

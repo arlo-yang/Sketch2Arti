@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="drawer_interior_completion">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="mesh_static_base.stl" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="mesh_static_base.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <link name="moveable_link">
+    <visual>
+      <geometry>
+        <mesh filename="mesh_moveable.stl" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="mesh_moveable.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <joint name="move_joint" type="prismatic">
+    <parent link="base_link" />
+    <child link="moveable_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0.0" upper="0.9323176145553589" effort="1000" velocity="1.0" />
+  </joint>
+</robot>
